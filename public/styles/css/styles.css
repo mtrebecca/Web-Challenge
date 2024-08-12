@@ -1,0 +1,205 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0C4n.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjr0C4n.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1y4n.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1y4n.ttf) format('truetype');
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+.home .search-field button {
+  background-color: #CB0D1F;
+}
+header .top-bar {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #231F20;
+  color: #fff;
+  font-size: 14px;
+  padding: 0.5rem 5%;
+}
+header .top-bar a {
+  font-weight: 600;
+  color: #fff;
+}
+header .header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5% 5%;
+}
+header .header-content img {
+  max-width: 100%;
+  height: auto;
+}
+header .header-content .search-field {
+  display: flex;
+  align-items: center;
+}
+header .header-content .search-field input {
+  height: 35px;
+  width: 100%;
+  min-width: 310px;
+  border: 1px solid #959595;
+  padding: 0 0.5rem;
+}
+header .header-content .search-field button {
+  color: #fff;
+  font-weight: 700;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+}
+header .header-content .hamburger,
+header .header-content .fa-shopping-cart {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 21px;
+  cursor: pointer;
+}
+header .header-content .hamburger span,
+header .header-content .fa-shopping-cart span {
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+}
+header .main-nav {
+  background-color: #cb0d1f;
+}
+header .main-nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+}
+header .main-nav ul li {
+  flex: 1;
+  text-align: center;
+}
+header .main-nav ul li a {
+  display: block;
+  padding: 1rem;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+header .main-nav ul li a:hover {
+  background-color: #9b0a18;
+}
+main {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 5%;
+}
+main .hero {
+  width: 82%;
+  margin-left: 1rem;
+}
+main .hero h1 {
+  font-weight: 500;
+}
+main .hero .banner-space {
+  background: #acacac;
+  width: 100%;
+  height: 280px;
+}
+#home .main-nav {
+  background: #E2DEDC;
+  padding: 15px 40px;
+  color: #000;
+  margin-top: 0;
+}
+#home .main-nav ul {
+  padding: 0;
+}
+#home .main-nav a {
+  color: #000;
+  text-decoration: unset;
+}
+#footer-container {
+  width: 100%;
+  bottom: 0;
+}
+#footer-container footer,
+#footer-container .footer-content {
+  padding: 1.5% 5%;
+}
+#footer-container .footer-content {
+  background-color: #CB0D1F;
+  height: 175px;
+}
+@media (max-width: 768px) {
+  header .header-content .search-field {
+    display: none;
+  }
+  header .header-content .hamburger,
+  header .header-content .fa-shopping-cart {
+    display: flex;
+  }
+  header .main-nav {
+    display: none;
+    flex-direction: column;
+  }
+  header .main-nav.active {
+    display: flex;
+  }
+  header .main-nav ul {
+    flex-direction: column;
+  }
+  header .main-nav ul li a {
+    width: 100%;
+    text-align: left;
+    padding: 1rem 5%;
+  }
+  main {
+    flex-direction: column;
+  }
+  main #main-nav {
+    display: none;
+  }
+  main .hero {
+    width: 100%;
+    margin-left: 0;
+  }
+  main .hero .banner-space {
+    height: 85px;
+  }
+  #footer-container .footer-content {
+    padding: 10px 20px;
+    height: 150px;
+  }
+}

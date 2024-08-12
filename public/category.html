@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página de categoria</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;800&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="styles/css/styles.css" />
+    <link rel="stylesheet" href="styles/css/stylesCategory.css" />
+  </head>
+  <body class="category">
+    <div id="header-container"></div>
+
+    <main>
+      <nav id="breadcrumb"></nav>
+      <div class="all-content">
+        <div class="filter-content">
+          <nav class="main-nav" id="main-nav">
+            <strong>FILTRE POR</strong>
+            <span>CATEGORIAS</span>
+            <ul id="category-list"></ul>
+            <div class="all-filters"></div>
+          </nav>
+        </div>
+        <div class="content-products">
+          <h1 id="category-name">Carregando...</h1>
+
+          <div class="toolbar">
+            <div class="icons-select">
+              <div class="icons">
+                <i class="fa fa-th" aria-hidden="true"></i>
+                <i class="fa fa-list" aria-hidden="true"></i>
+              </div>
+              <div class="select-filter">
+                <span>Ordenar por</span>
+                <select id="sort-select" class="sort-select">
+                  <option value="alphabetical">Ordem Alfabética</option>
+                  <option value="price-asc">Menor Preço</option>
+                  <option value="price-desc">Maior Preço</option>
+                </select>
+                <button
+                  id="clear-sort"
+                  class="clear-sort-button"
+                  style="display: none">
+                  Limpar Filtro
+                </button>
+              </div>
+            </div>
+            <div class="filter-select"></div>
+          </div>
+
+          <div class="grid-products"></div>
+        </div>
+      </div>
+    </main>
+
+    <div id="footer-container"></div>
+    <script src="js/hambuguerMenu.js" defer></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/fetchProducts.js"></script>
+  </body>
+</html>
